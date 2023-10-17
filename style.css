@@ -29,7 +29,7 @@ hr {
 footer {
   color: #fbecd3;
   background-color: #06b5ab;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   width: 100%;
   height: 60vh;
@@ -55,6 +55,12 @@ footer .footer-nav {
 }
 footer .footer-nav p {
   height: 20px;
+}
+
+.recension {
+  border: 2px solid black;
+  height: 180px;
+  width: 90%;
 }
 
 body {
