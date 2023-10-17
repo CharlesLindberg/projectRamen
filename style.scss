@@ -1,8 +1,14 @@
-* {
-  background-color: red($color: #000000);
+@import "./partials/myColor";
+@import "./partials/header";
+@import "./partials/footer";
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  color: aqua;
-  background-color: black;
-}
+
+
+
+
+
