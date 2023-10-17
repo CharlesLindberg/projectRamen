@@ -1,18 +1,16 @@
-.fa-1x {
-  font-size: 1.5rem;
+@import "./partials/myColor";
+@import "./partials/header";
+@import "./partials/footer";
+@import "./partials/kontakt";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: red;
 }
-.navbar-toggler.toggler-example {
-  cursor: pointer;
-}
-.dark-blue-text {
-  color: #0A38F5;
-}
-.dark-pink-text {
-  color: #AC003A;
-}
-.dark-amber-text {
-  color: #ff6f00;
-}
-.dark-teal-text {
-  color: #004d40;
-}
+
+
+
+
+
+
