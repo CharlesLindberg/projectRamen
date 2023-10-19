@@ -12,14 +12,11 @@
    <title>Koi Noodle Bar</title>
     
   </head>
-  <body>
+  <body class="recension-body">
     <header>
       <nav>
-        <!-- <div class="nav-img"> -->
-       
-      <!-- </div> -->
         <ul>
-          <img src="/images/koiFishLogo.png" alt="Koi Noodle Logo">
+          <li><img src="/images/koiFishLogo.png" alt="Koi Noodle Logo"></li>
           <li>Hem</li>
           <li>Meny</li>
           <li>Om oss</li>
@@ -34,11 +31,73 @@
     <main class="recensioner">
         <div class="container">
             <div class="recension">
-
+                <h3>Linda:</h3>
+                <p>Jättegod mat, trevlig personal. Jag gillade att dem hade fått till inredningen så att det kändes som om att man satt någonstans i Japan och åt. Tummen upp!</p>
+                <p class="date">2023-09-15</p>
+                <div class="stars">
+                    <img src="./images/full-star.png" alt="Full star">
+                    <img src="./images/full-star.png" alt="Full star">
+                    <img src="./images/full-star.png" alt="Full star">
+                    <img src="./images/full-star.png" alt="Full star">
+                    <img src="./images/hollow-star.png" alt="hollow star">
+                </div>
             </div>
-            <div class="recension"></div>
-            <div class="recension"></div>
-            <div class="recension"></div>
+            <div class="recension">
+                <h3>Mark:</h3>
+                <p>Satt och åt med kollegorna under lunch och servicen var lite seg men maten var väldigt god. Om jag kommer igen så blir det inte när det är som mest folk.</p>
+                <p class="date">2023-09-17</p>
+                <div class="stars">
+                    <img src="./images/full-star.png" alt="Full star">
+                    <img src="./images/full-star.png" alt="Full star">
+                    <img src="./images/full-star.png" alt="Full star">
+                    <img src="./images/hollow-star.png" alt="Hollow star">
+                    <img src="./images/hollow-star.png" alt="hollow star">
+                </div>
+            </div>
+            <div class="recension">
+                <h3>Jon:</h3>
+                <p>Riktigt fin hemsida, verkar som att någon har gjort sin läxa när det gäller HTML&CSS.</p>
+                <p class="date">2023-09-13</p>
+                <div class="stars">
+                    <img src="./images/full-star.png" alt="Full star">
+                    <img src="./images/full-star.png" alt="Full star">
+                    <img src="./images/full-star.png" alt="Full star">
+                    <img src="./images/full-star.png" alt="Full star">
+                    <img src="./images/full-star.png" alt="Full star">
+                </div>
+            </div>
+            <div class="recension">
+                <h3>Claire:</h3>
+                <p>Food took a while to come, noodles overcooked. Alot of people. Would like some better service.</p>
+                <p class="date">2023-09-11</p>
+                <div class="stars">
+                    <img src="./images/full-star.png" alt="Full star">
+                    <img src="./images/full-star.png" alt="Full star">
+                    <img src="./images/hollow-star.png" alt="Hollow star">
+                    <img src="./images/hollow-star.png" alt="Hollow star">
+                    <img src="./images/hollow-star.png" alt="Hollow star">
+                </div>
+            </div>
+            <div class="text-form">
+                <form action="#">
+                    <div class="rec-row">
+                            <label for="fnamn">Ditt Förnamn</label>
+                            <input type="text" id="fnamn" name="förnamn" placeholder="Förnamn:">   
+                    </div>
+                    <div class="rec-row">
+                            <label for="email">Din e-mail</label>
+                            <input type="text" id="email" name="efternamn" placeholder="E-mail:">
+                    </div>
+                    <div class="rec-row">
+                        <label for="rec-text"></label>
+                        <textarea id="rec-text" name="recension" placeholder="Skriv recension här.."></textarea>
+                        <input type="submit" value="Skicka">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="rec-sent">
+            <div class="sent"></div>
         </div>
         
     </main>
