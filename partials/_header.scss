@@ -1,22 +1,22 @@
-nav{
-    // border: 1px solid black;
-    background-color: $colorBeige;
-    font-family: 'Nunito Sans', sans-serif;
-    padding: 12px;
-    height: 120px;
-    // overflow: hidden;
-    img {
-
-        height: 110px;
-        
-
-    }
-    ul{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      list-style-type: none;
-      align-items: center;
-      padding: 0;
-    }
+nav {
+  // border: 1px solid black;
+  background-color: $colorSuperDarkBeige;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 12px;
+  height: 120px;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: $colorBeige;
+  // overflow: hidden;
+  img {
+    height: 110px;
   }
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+  }
+}
