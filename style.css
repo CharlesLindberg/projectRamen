@@ -388,7 +388,6 @@ label {
   .employee .employee-text {
     display: flex;
     flex-direction: column;
-    background-color: red;
   }
 }
 body {
