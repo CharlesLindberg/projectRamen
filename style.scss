@@ -1,12 +1,17 @@
 @import "./partials/myColor";
 @import "./partials/header";
 @import "./partials/footer";
+
 @import "./partials/recensioner";
 @import "./partials/omoss";
+
+@import "./partials/kontakt";
+
 
 body {
   margin: 0;
   padding: 0;
+  background-color: red;
 }
 
 
