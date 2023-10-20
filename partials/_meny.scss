@@ -1,0 +1,99 @@
+.meny .content {
+  border: 1px solid black;
+  background-color: $colorLightTurqoise;
+  font-family: "Nunito Sans", sans-serif;
+  color: $colorDarkGray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  align-items: center;
+  text-align: center;
+  .rubrik {
+    position: relative;
+    video {
+      max-width: 100%;
+    }
+    h2 {
+      font-size: 50px;
+      position: relative;
+      bottom: 35vw;
+      color: $colorBeige;
+    }
+    p {
+      position: relative;
+      bottom: 35vw;
+      font-style: normal;
+      color: $colorBeige;
+    }
+  }
+
+  h3 {
+    font-family: "Nova Square", sans-serif;
+    font-size: x-large;
+  }
+
+  h4 {
+    margin-top: 30px;
+  }
+  hr {
+    height: 1px;
+    width: 300px;
+    background-color: $colorDarkGray;
+    border: none;
+  }
+  p {
+    font-style: italic;
+  }
+  .appetizers {
+    // border: 1px solid lightgreen;
+    max-width: 450px;
+
+    background-color: $colorBeige;
+    border-radius: 10px;
+    margin: 10px;
+  }
+}
+
+.entrees {
+  border: 1px solid $colorBeige;
+  background-color: $colorBeige;
+  border-radius: 10px;
+  max-width: 450px;
+  margin: 10px;
+}
+.desserts {
+  //   border: 1px solid $colorTurqoise;
+  background-color: $colorBeige;
+  border-radius: 10px;
+  max-width: 450px;
+  margin: 10px;
+}
+.drinks {
+  //   border: 1px solid bisque;
+  background-color: $colorBeige;
+  border-radius: 10px;
+  max-width: 450px;
+  margin: 10px;
+}
+
+.meny {
+  border-bottom: 2px solid $colorBeige;
+}
+
+.meny:hover {
+  background-color: $colorLightTurqoise;
+}
+
+@media (min-width: 1024px) {
+  .meny .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .rubrik h2,
+  .rubrik p {
+    position: relative;
+    bottom: 60vw;
+  }
+}

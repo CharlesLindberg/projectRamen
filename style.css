@@ -1,8 +1,11 @@
 nav {
-  background-color: #fbecd3;
+  background-color: #88593e;
   font-family: "Nunito Sans", sans-serif;
   padding: 12px;
   height: 120px;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: #fbecd3;
 }
 nav img {
   height: 110px;
@@ -29,6 +32,11 @@ hr {
 footer {
   color: #fbecd3;
   background-color: #06b5ab;
+<<<<<<< HEAD
+  position: relative;
+  bottom: 0px;
+=======
+>>>>>>> b4fb71fde395212a987e678b63897acba1d87e58
   width: 100%;
   min-height: 60vh;
   display: flex;
@@ -55,6 +63,103 @@ footer .footer-nav p {
   height: 20px;
 }
 
+<<<<<<< HEAD
+.meny .content {
+  border: 1px solid black;
+  background-color: #9fcec3;
+  font-family: "Nunito Sans", sans-serif;
+  color: rgb(53, 53, 53);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  align-items: center;
+  text-align: center;
+}
+.meny .content .rubrik {
+  position: relative;
+}
+.meny .content .rubrik video {
+  max-width: 100%;
+}
+.meny .content .rubrik h2 {
+  font-size: 50px;
+  position: relative;
+  bottom: 35vw;
+  color: #fbecd3;
+}
+.meny .content .rubrik p {
+  position: relative;
+  bottom: 35vw;
+  font-style: normal;
+  color: #fbecd3;
+}
+.meny .content h3 {
+  font-family: "Nova Square", sans-serif;
+  font-size: x-large;
+}
+.meny .content h4 {
+  margin-top: 30px;
+}
+.meny .content hr {
+  height: 1px;
+  width: 300px;
+  background-color: rgb(53, 53, 53);
+  border: none;
+}
+.meny .content p {
+  font-style: italic;
+}
+.meny .content .appetizers {
+  max-width: 450px;
+  background-color: #fbecd3;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.entrees {
+  border: 1px solid #fbecd3;
+  background-color: #fbecd3;
+  border-radius: 10px;
+  max-width: 450px;
+  margin: 10px;
+}
+
+.desserts {
+  background-color: #fbecd3;
+  border-radius: 10px;
+  max-width: 450px;
+  margin: 10px;
+}
+
+.drinks {
+  background-color: #fbecd3;
+  border-radius: 10px;
+  max-width: 450px;
+  margin: 10px;
+}
+
+.meny {
+  border-bottom: 2px solid #fbecd3;
+}
+
+.meny:hover {
+  background-color: #9fcec3;
+}
+
+@media (min-width: 1024px) {
+  .meny .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .rubrik h2,
+.rubrik p {
+    position: relative;
+    bottom: 60vw;
+  }
+}
+=======
 .recension-body {
   background: url("./images/alley-eva-bronzini.jpg");
   background-size: cover;
@@ -258,6 +363,7 @@ label {
   text-align: center;
 }
 
+>>>>>>> b4fb71fde395212a987e678b63897acba1d87e58
 body {
   margin: 0;
   padding: 0;
