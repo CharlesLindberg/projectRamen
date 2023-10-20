@@ -297,8 +297,8 @@ label {
   flex-direction: column;
   justify-content: space-evenly;
   gap: 20px;
-  align-items: center;
   width: 100%;
+  align-items: center;
   -o-object-fit: cover;
      object-fit: cover;
   padding-bottom: 24px;
@@ -309,11 +309,12 @@ label {
 }
 
 .employee {
+  font-family: "Nunito Sans", sans-serif;
   height: 215px;
   width: 300px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(152, 246, 255, 0.3);
+  background-color: rgba(194, 248, 255, 0.3019607843);
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
   box-sizing: border-box;
@@ -338,6 +339,7 @@ label {
   height: 50px;
 }
 .employee h3 {
+  font-weight: 400;
   margin: 4px 0px;
 }
 .employee p:nth-of-type(1) {
@@ -361,6 +363,34 @@ label {
   background: url("/images/wood-background2-tirachard-kumtanom.jpg");
 }
 
+@media (min-width: 1024px) {
+  .employee {
+    width: 80%;
+    height: 350px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .employee .employee:not(.employee-pictures) {
+    justify-content: center;
+  }
+  .employee .employee-pictures {
+    width: 600px;
+    justify-content: space-evenly;
+  }
+  .employee .employee-pictures img {
+    min-width: 30%;
+    max-width: 50%;
+  }
+  .employee .employee-pictures img:nth-of-type(2) {
+    display: none;
+  }
+  .employee .employee-text {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+  }
+}
 body {
   margin: 0;
   padding: 0;
