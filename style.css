@@ -19,6 +19,13 @@ nav ul {
   align-items: center;
   padding: 0;
 }
+nav ul li .nav-item {
+  text-decoration: none;
+  color: #fbecd3;
+}
+nav ul li .active {
+  border-bottom: 2px solid #fbecd3;
+}
 
 .row {
   display: flex;
@@ -135,14 +142,6 @@ footer .footer-nav p {
   border-radius: 10px;
   max-width: 450px;
   margin: 10px;
-}
-
-.meny {
-  border-bottom: 2px solid #fbecd3;
-}
-
-.meny:hover {
-  background-color: #9fcec3;
 }
 
 @media (min-width: 1024px) {
@@ -427,6 +426,7 @@ main {
     bottom: 200px;
   }
 }
+
 body {
   margin: 0;
   padding: 0;
