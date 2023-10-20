@@ -199,16 +199,30 @@ label {
   gap: 20px;
   align-items: center;
   width: 100%;
+  background: url("/images/wood-background2-tirachard-kumtanom.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.nav-oss {
+  border-bottom: 2px solid #f92737;
 }
 
 .employee {
-  height: 250px;
+  height: 215px;
   width: 300px;
   display: flex;
   flex-direction: column;
-  background-color: lightgrey;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
   box-sizing: border-box;
   padding: 12px;
+  border-radius: 4px;
+}
+.employee .employee-pictures {
+  display: flex;
+  justify-content: space-between;
 }
 .employee img {
   height: auto;
@@ -216,6 +230,12 @@ label {
   max-width: 30%;
   border-radius: 50%;
   aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.employee img:nth-of-type(2) {
+  min-width: 20px;
+  height: 50px;
 }
 .employee h3 {
   margin: 4px 0px;
