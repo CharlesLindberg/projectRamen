@@ -192,6 +192,52 @@ label {
     width: 60%;
   }
 }
+.container-oss {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.employee {
+  height: 250px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  box-sizing: border-box;
+  padding: 12px;
+}
+.employee img {
+  height: auto;
+  min-width: 20%;
+  max-width: 30%;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+.employee h3 {
+  margin: 4px 0px;
+}
+.employee p:nth-of-type(1) {
+  font-size: 12px;
+}
+.employee p:nth-of-type(2) {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.oss-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.oss-title h1, .oss-title p {
+  width: 70%;
+  text-align: center;
+}
+
 body {
   margin: 0;
   padding: 0;
