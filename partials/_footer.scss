@@ -1,9 +1,34 @@
 .row {
+<<<<<<< HEAD
   // border: 1px solid blue;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+=======
+    // border: 1px solid blue;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+  
+    
+  }
+  
+  hr {
+    height: 85px;
+    
+  }
+  
+  footer {
+    color: $colorBeige;
+    background-color: $colorTurqoise;
+    width:100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+>>>>>>> b4fb71fde395212a987e678b63897acba1d87e58
 
 hr {
   height: 85px;
