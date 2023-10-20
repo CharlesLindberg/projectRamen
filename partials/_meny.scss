@@ -12,6 +12,7 @@
   text-align: center;
   .rubrik {
     position: relative;
+
     video {
       max-width: 100%;
     }
@@ -76,14 +77,6 @@
   border-radius: 10px;
   max-width: 450px;
   margin: 10px;
-}
-
-.meny {
-  border-bottom: 2px solid $colorBeige;
-}
-
-.meny:hover {
-  background-color: $colorLightTurqoise;
 }
 
 @media (min-width: 1024px) {

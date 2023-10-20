@@ -18,6 +18,13 @@ nav ul {
   align-items: center;
   padding: 0;
 }
+nav ul li .nav-item {
+  text-decoration: none;
+  color: #fbecd3;
+}
+nav ul li .active {
+  border-bottom: 2px solid #fbecd3;
+}
 
 .row {
   display: flex;
@@ -32,11 +39,8 @@ hr {
 footer {
   color: #fbecd3;
   background-color: #06b5ab;
-<<<<<<< HEAD
   position: relative;
   bottom: 0px;
-=======
->>>>>>> b4fb71fde395212a987e678b63897acba1d87e58
   width: 100%;
   min-height: 60vh;
   display: flex;
@@ -63,7 +67,6 @@ footer .footer-nav p {
   height: 20px;
 }
 
-<<<<<<< HEAD
 .meny .content {
   border: 1px solid black;
   background-color: #9fcec3;
@@ -140,14 +143,6 @@ footer .footer-nav p {
   margin: 10px;
 }
 
-.meny {
-  border-bottom: 2px solid #fbecd3;
-}
-
-.meny:hover {
-  background-color: #9fcec3;
-}
-
 @media (min-width: 1024px) {
   .meny .container {
     display: flex;
@@ -159,7 +154,6 @@ footer .footer-nav p {
     bottom: 60vw;
   }
 }
-=======
 .recension-body {
   background: url("./images/alley-eva-bronzini.jpg");
   background-size: cover;
@@ -363,9 +357,7 @@ label {
   text-align: center;
 }
 
->>>>>>> b4fb71fde395212a987e678b63897acba1d87e58
 body {
   margin: 0;
   padding: 0;
-  background-color: red;
 }/*# sourceMappingURL=style.css.map */
