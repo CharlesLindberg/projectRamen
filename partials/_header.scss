@@ -8,6 +8,7 @@ nav {
   text-transform: uppercase;
   color: $colorBeige;
   // overflow: hidden;
+
   img {
     height: 110px;
   }
@@ -18,5 +19,12 @@ nav {
     list-style-type: none;
     align-items: center;
     padding: 0;
+    li .nav-item {
+      text-decoration: none;
+      color: $colorBeige;
+    }
+    li .active {
+      border-bottom: 2px solid $colorBeige;
+    }
   }
 }
