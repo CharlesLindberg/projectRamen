@@ -16,17 +16,18 @@
   </head>
   <body class="recension-body">
     <header>
-      <nav>
-        <ul>
-          <li><img src="/images/RamenLogo.png" alt="Logo" /></li>
-          <li><a href="/index.html" class="nav-item">Hem</a></li>
-          <li class="meny"><a href="/meny.html" class="nav-item">Meny</a></li>
-          <li><a href="/omoss.html" class="nav-item">Om oss</a></li>
-          <li>
-            <a href="/recensioner.html" class="nav-item active"> Recensioner</a>
-          </li>
-          <li><a href="/kontakt.html" class="nav-item"> Kontakt</a></li>
-        </ul>
+      <nav class="topnav" id="myTopnav" role="navigation" aria-label="Main Navigation">
+        <a href="#home" class="active"><img src="./images/RamenLogo.png" alt="Koi fish logo"
+            height="75px"
+            width="75px"></a>
+        <a href="./index.html">Hem</a>
+        <a href="./meny.html">Meny</a>
+        <a href="./omoss.html">Om oss</a>
+        <a href="./recensioner.html">Recensioner</a>
+        <a href="./kontakt.html">Kontakt</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
     </header>
     <div class="rec-title">
@@ -53,9 +54,8 @@
         <div class="recension">
           <h3>Mark:</h3>
           <p>
-            Satt och åt med kollegorna under lunch och servicen var lite seg men
-            maten var väldigt god. Om jag kommer igen så blir det inte när det
-            är som mest folk.
+            Satt och åt med kollegorna under lunch och maten var väldigt god. Nästa gång jag äter här blir det
+            inte lunchtid(mycket folk).
           </p>
           <p class="date">2023-09-17</p>
           <div class="stars">
