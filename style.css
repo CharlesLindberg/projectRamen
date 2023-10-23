@@ -422,7 +422,7 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
   }
-  h2 {
+  .rubrikkontakt {
     position: relative;
     bottom: 200px;
   }
