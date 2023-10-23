@@ -12,105 +12,132 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js"></script>
     <title>Koi Noodle Bar</title>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header>
       <nav class="topnav" id="myTopnav" role="navigation" aria-label="Main Navigation">
         <a href="#home" class="active"><img src="./images/RamenLogo.png" alt="Koi fish logo"
-            height="75px"
-            width="75px"></a>
-        <a href="./index.html">Hem</a>
-        <a href="./meny.html">Meny</a>
-        <a href="./omoss.html">Om oss</a>
-        <a href="./recensioner.html">Recensioner</a>
-        <a href="./kontakt.html">Kontakt</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </nav>
-    </header>
-    <main class="startsida">
-      <div>
-        <img src="/images/pexels-kyle-lui-734562.jpg" alt="restaurangen" />
-        <h1>KOI NOODLE HOUSE</h1>
-        <a href="/meny.html"><button>MENU</button></a>
-      </div>
-      <div class="bar">
-        <img src="/images/theBar.jpg" alt="Baren" />
-        <h2>The bar</h2>
-        <div class="text">
-          <p>
-            Upptäck den förtrollande baren på Koi Noodle House, en plats som har
-            blivit synonym med en trevlig atmosfär, förstklassiga drinkar och en
-            mingelvänlig miljö. Vår bar är hjärtat av restaurangen, där smaker
-            och samtal flödar fritt. Med en skicklig bartenderstab som skapar
-            konstverk i varje glas och en omgivning som andas liv och glädje, är
-            Koi Noodle House-baren en destination i sig. <br /><br />
-
-            Oavsett om du letar efter en avkopplande drink efter arbete, en
-            festlig kväll med vänner eller en romantisk rendezvous, erbjuder vår
-            bar det perfekta läget. Njut av en innovativ cocktailmeny med
-            favoriter och specialskapelser, tillsammans med en varm och
-            välkomnande atmosfär. Vår bar är platsen där minnen skapas, skratt
-            delas och vänner träffas. Kom och upplev den fantastiska stämningen
-            på Koi Noodle House-baren, där goda tider och goda drinkar går hand
-            i hand.
-          </p>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div class="row">
-        <div class="contact-information" aria-label="Company Contact Information">
-          <p>Mail:</br>
-            middlese@fosil.pro</br>
-          </p>
-          <p>
-            Telefon:</br>
-            +444 555 666 777</br>
-          </p>
-          <p>
-            Adress:</br>
-            Tomtebodavägen 3A 171 65, Solna</br>
-          </p>
-          <p>
-            Copyright:</br>
-            All the rights.
-          </p>
-        </div>
-        <div class="contact">
-          <h3>Öppettider</h3>
-          <p>
-            Måndag: 11-21 <br />
-            Tisdag: 11-21 <br />
-            Onsdag: 11-23 <br />
-            Torsdag: 11-23 <br />
-            Fredag: 11-23 <br />
-            Lördag: 11-23 <br />
-            Söndag: 11-21 <br />
-          </p>
-        </div>
-      </div>
-      <div class="img-holder">
-        <img src="./images/nudlar2-removebg-preview.png" alt="nudlar" />
-      </div>
-      <div class="row">
-        <div class="footer-nav" aria-label="Footer Navigation">
-          <a href="./omoss.html">Om oss</a>
+          height="75px"
+          width="75px"></a>
+          <a href="./index.html">Hem</a>
           <a href="./meny.html">Meny</a>
-        </div>
-        <div class="line">
-          <hr />
-        </div>
-        <div class="row">
-          <div class="footer-nav" aria-label="Footer Navigation">
-            <a href="./kontakt.html">Kontakt</a>
-            <a href="./recensioner.html">Recensioner</a>
+          <a href="./omoss.html">Om oss</a>
+          <a href="./recensioner.html">Recensioner</a>
+          <a href="./kontakt.html">Kontakt</a>
+          
+          <div class="openBtn">
+            <button class="openButton" onclick="openForm()"><strong>Boka bord</strong></button>
           </div>
-        </div>
-      </div>
-    </footer>
+          <div class="loginPopup">
+            <div class="formPopup" id="popupForm">
+              <form action="/action_page.php" class="formContainer">
+                <h2>Boka Bord:</h2>
+                <label for="email">
+                  <strong>E-mail</strong>
+                </label>
+                <input type="text" id="email" placeholder="Your Email" name="email" required>
+                <label for="date">
+                  <strong>Datum</strong>
+                </label>
+                <input type="datetime-local" id="date" placeholder="Datum" name="date" required>
+                <label for="date">
+                  <strong>Antal personer</strong>
+                </label>
+                <input type="number" id="persons" placeholder="Antal personer" name="persons" required>
+                <button type="submit" class="btn-boka">Boka</button>
+                <button type="button" class="btn-boka cancel" onclick="closeForm()">Stäng</button>
+              </form>
+            </div>
+          </div>
+
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                
+              </a>
+            </nav>
+          </header>
+          <main class="startsida">
+            <div>
+              <img src="/images/pexels-kyle-lui-734562.jpg" alt="restaurangen" />
+              <h1>KOI NOODLE HOUSE</h1>
+              <a href="/meny.html"><button>MENU</button></a>
+            </div>
+            <div class="bar">
+              <img src="/images/theBar.jpg" alt="Baren" />
+              <h2>The bar</h2>
+              <div class="text">
+                <p>
+                  Upptäck den förtrollande baren på Koi Noodle House, en plats som har
+                  blivit synonym med en trevlig atmosfär, förstklassiga drinkar och en
+                  mingelvänlig miljö. Vår bar är hjärtat av restaurangen, där smaker
+                  och samtal flödar fritt. Med en skicklig bartenderstab som skapar
+                  konstverk i varje glas och en omgivning som andas liv och glädje, är
+                  Koi Noodle House-baren en destination i sig. <br /><br />
+                  
+                  Oavsett om du letar efter en avkopplande drink efter arbete, en
+                  festlig kväll med vänner eller en romantisk rendezvous, erbjuder vår
+                  bar det perfekta läget. Njut av en innovativ cocktailmeny med
+                  favoriter och specialskapelser, tillsammans med en varm och
+                  välkomnande atmosfär. Vår bar är platsen där minnen skapas, skratt
+                  delas och vänner träffas. Kom och upplev den fantastiska stämningen
+                  på Koi Noodle House-baren, där goda tider och goda drinkar går hand
+                  i hand.
+                </p>
+              </div>
+            </div>
+          </main>
+          <footer>
+            <div class="row">
+              <div class="contact-information" aria-label="Company Contact Information">
+                <p>Mail:</br>
+                  middlese@fosil.pro</br>
+                </p>
+                <p>
+                  Telefon:</br>
+                  +444 555 666 777</br>
+                </p>
+                <p>
+                  Adress:</br>
+                  Tomtebodavägen 3A 171 65, Solna</br>
+                </p>
+                <p>
+                  Copyright:</br>
+                  All the rights.
+                </p>
+              </div>
+              <div class="contact">
+                <h3>Öppettider</h3>
+                <p>
+                  Måndag: 11-21 <br />
+                  Tisdag: 11-21 <br />
+                  Onsdag: 11-23 <br />
+                  Torsdag: 11-23 <br />
+                  Fredag: 11-23 <br />
+                  Lördag: 11-23 <br />
+                  Söndag: 11-21 <br />
+                </p>
+              </div>
+            </div>
+            <div class="img-holder">
+              <img src="./images/nudlar2-removebg-preview.png" alt="nudlar" />
+            </div>
+            <div class="row">
+              <div class="footer-nav" aria-label="Footer Navigation">
+                <a href="./omoss.html">Om oss</a>
+                <a href="./meny.html">Meny</a>
+              </div>
+              <div class="line">
+                <hr />
+              </div>
+              <div class="row">
+                <div class="footer-nav" aria-label="Footer Navigation">
+                  <a href="./kontakt.html">Kontakt</a>
+                  <a href="./recensioner.html">Recensioner</a>
+                </div>
+              </div>
+            </div>
+          </footer>
   </body>
 </html>
