@@ -4,133 +4,169 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,900;6..12,1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,900;6..12,1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
 
-   <title>Koi Noodle Bar</title>
-    
+    <title>Koi Noodle Bar</title>
   </head>
   <body class="recension-body">
     <header>
-      <nav>
-        <ul>
-          <li><img src="/images/koiFishLogo.png" alt="Koi Noodle Logo"></li>
-          <li>Hem</li>
-          <li>Meny</li>
-          <li>Om oss</li>
-          <li>Recensioner</li>
-          <li>Kontakt</li>
-        </ul>
+      <nav class="topnav" id="myTopnav" role="navigation" aria-label="Main Navigation">
+        <a href="#home" class="active"><img src="./images/RamenLogo.png" alt="Koi fish logo"
+            height="75px"
+            width="75px"></a>
+        <a href="./index.html">Hem</a>
+        <a href="./meny.html">Meny</a>
+        <a href="./omoss.html">Om oss</a>
+        <a href="./recensioner.html">Recensioner</a>
+        <a href="./kontakt.html">Kontakt</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
     </header>
     <div class="rec-title">
-        <h1>Recensioner</h1>
+      <h1>Recensioner</h1>
     </div>
     <main class="recensioner">
-        <div class="container">
-            <div class="recension">
-                <h3>Linda:</h3>
-                <p>Jättegod mat, trevlig personal. Jag gillade att dem hade fått till inredningen så att det kändes som om att man satt någonstans i Japan och åt. Tummen upp!</p>
-                <p class="date">2023-09-15</p>
-                <div class="stars">
-                    <img src="./images/full-star.png" alt="Full star">
-                    <img src="./images/full-star.png" alt="Full star">
-                    <img src="./images/full-star.png" alt="Full star">
-                    <img src="./images/full-star.png" alt="Full star">
-                    <img src="./images/hollow-star.png" alt="hollow star">
-                </div>
-            </div>
-            <div class="recension">
-                <h3>Mark:</h3>
-                <p>Satt och åt med kollegorna under lunch och servicen var lite seg men maten var väldigt god. Om jag kommer igen så blir det inte när det är som mest folk.</p>
-                <p class="date">2023-09-17</p>
-                <div class="stars">
-                    <img src="./images/full-star.png" alt="Full star">
-                    <img src="./images/full-star.png" alt="Full star">
-                    <img src="./images/full-star.png" alt="Full star">
-                    <img src="./images/hollow-star.png" alt="Hollow star">
-                    <img src="./images/hollow-star.png" alt="hollow star">
-                </div>
-            </div>
-            <div class="recension">
-                <h3>Jon:</h3>
-                <p>Riktigt fin hemsida, verkar som att någon har gjort sin läxa när det gäller HTML&CSS.</p>
-                <p class="date">2023-09-13</p>
-                <div class="stars">
-                    <img src="./images/full-star.png" alt="Full star">
-                    <img src="./images/full-star.png" alt="Full star">
-                    <img src="./images/full-star.png" alt="Full star">
-                    <img src="./images/full-star.png" alt="Full star">
-                    <img src="./images/full-star.png" alt="Full star">
-                </div>
-            </div>
-            <div class="recension">
-                <h3>Claire:</h3>
-                <p>Food took a while to come, noodles overcooked. Alot of people. Would like some better service.</p>
-                <p class="date">2023-09-11</p>
-                <div class="stars">
-                    <img src="./images/full-star.png" alt="Full star">
-                    <img src="./images/full-star.png" alt="Full star">
-                    <img src="./images/hollow-star.png" alt="Hollow star">
-                    <img src="./images/hollow-star.png" alt="Hollow star">
-                    <img src="./images/hollow-star.png" alt="Hollow star">
-                </div>
-            </div>
-            <div class="text-form">
-                <form action="#">
-                    <div class="rec-row">
-                            <label for="fnamn">Ditt Förnamn</label>
-                            <input type="text" id="fnamn" name="förnamn" placeholder="Förnamn:">   
-                    </div>
-                    <div class="rec-row">
-                            <label for="email">Din e-mail</label>
-                            <input type="text" id="email" name="efternamn" placeholder="E-mail:">
-                    </div>
-                    <div class="rec-row">
-                        <label for="rec-text"></label>
-                        <textarea id="rec-text" name="recension" placeholder="Skriv recension här.."></textarea>
-                        <input type="submit" value="Skicka">
-                    </div>
-                </form>
-            </div>
+      <div class="container">
+        <div class="recension">
+          <h3>Linda:</h3>
+          <p>
+            Jättegod mat, trevlig personal. Jag gillade att dem hade fått till
+            inredningen så att det kändes som om att man satt någonstans i Japan
+            och åt. Tummen upp!
+          </p>
+          <p class="date">2023-09-15</p>
+          <div class="stars">
+            <img src="./images/full-star.png" alt="Full star" />
+            <img src="./images/full-star.png" alt="Full star" />
+            <img src="./images/full-star.png" alt="Full star" />
+            <img src="./images/full-star.png" alt="Full star" />
+            <img src="./images/hollow-star.png" alt="hollow star" />
+          </div>
         </div>
-        <div class="rec-sent">
-            <div class="sent"></div>
+        <div class="recension">
+          <h3>Mark:</h3>
+          <p>
+            Satt och åt med kollegorna under lunch och maten var väldigt god. Nästa gång jag äter här blir det
+            inte lunchtid(mycket folk).
+          </p>
+          <p class="date">2023-09-17</p>
+          <div class="stars">
+            <img src="./images/full-star.png" alt="Full star" />
+            <img src="./images/full-star.png" alt="Full star" />
+            <img src="./images/full-star.png" alt="Full star" />
+            <img src="./images/hollow-star.png" alt="Hollow star" />
+            <img src="./images/hollow-star.png" alt="hollow star" />
+          </div>
         </div>
-        
+        <div class="recension">
+          <h3>Jon:</h3>
+          <p>
+            Riktigt fin hemsida, verkar som att någon har gjort sin läxa när det
+            gäller HTML&CSS.
+          </p>
+          <p class="date">2023-09-13</p>
+          <div class="stars">
+            <img src="./images/full-star.png" alt="Full star" />
+            <img src="./images/full-star.png" alt="Full star" />
+            <img src="./images/full-star.png" alt="Full star" />
+            <img src="./images/full-star.png" alt="Full star" />
+            <img src="./images/full-star.png" alt="Full star" />
+          </div>
+        </div>
+        <div class="recension">
+          <h3>Claire:</h3>
+          <p>
+            Food took a while to come, noodles overcooked. Alot of people. Would
+            like some better service.
+          </p>
+          <p class="date">2023-09-11</p>
+          <div class="stars">
+            <img src="./images/full-star.png" alt="Full star" />
+            <img src="./images/full-star.png" alt="Full star" />
+            <img src="./images/hollow-star.png" alt="Hollow star" />
+            <img src="./images/hollow-star.png" alt="Hollow star" />
+            <img src="./images/hollow-star.png" alt="Hollow star" />
+          </div>
+        </div>
+        <div class="text-form">
+          <form action="#">
+            <div class="rec-row">
+              <label for="fnamn">Ditt Förnamn</label>
+              <input
+                type="text"
+                id="fnamn"
+                name="förnamn"
+                placeholder="Förnamn:"
+              />
+            </div>
+            <div class="rec-row">
+              <label for="email">Din e-mail</label>
+              <input
+                type="text"
+                id="email"
+                name="efternamn"
+                placeholder="E-mail:"
+              />
+            </div>
+            <div class="rec-row">
+              <label for="rec-text"></label>
+              <textarea
+                id="rec-text"
+                name="recension"
+                placeholder="Skriv recension här.."
+              ></textarea>
+              <input type="submit" value="Skicka" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="rec-sent">
+        <div class="sent"></div>
+      </div>
     </main>
-      <footer>
+    <footer>
       <div class="row">
         <div class="contact">
           <p>
-            Mail: <br>
-            Telefon: <br>
-            Adress: <br>
+            Mail: <br />
+            Telefon: <br />
+            Adress: <br />
             copywright:
           </p>
         </div>
         <div class="contact">
           <h3>Öppettider</h3>
-          <p>Måndag: 11-21 <br>
-            Tisdag: 11-21 <br>
-            Onsdag: 11-23 <br>
-            Torsdag: 11-23 <br>
-            Fredag: 11-23 <br>
-            Lördag: 11-23 <br>
-            Söndag: 11-21 <br>
+          <p>
+            Måndag: 11-21 <br />
+            Tisdag: 11-21 <br />
+            Onsdag: 11-23 <br />
+            Torsdag: 11-23 <br />
+            Fredag: 11-23 <br />
+            Lördag: 11-23 <br />
+            Söndag: 11-21 <br />
           </p>
         </div>
       </div>
-      <div class="img-holder"><img src="./images/nudlar2-removebg-preview.png" alt="nudlar"></div>
+      <div class="img-holder">
+        <img src="./images/nudlar2-removebg-preview.png" alt="nudlar" />
+      </div>
       <div class="row">
         <div class="footer-nav">
-            <p>Om Oss</p> 
-            <p>Meny</p> 
+          <p>Om Oss</p>
+          <p>Meny</p>
         </div>
         <div class="line">
-          <hr>
+          <hr />
         </div>
         <div class="row">
           <div class="footer-nav">
@@ -138,7 +174,6 @@
             <p>Recensioner</p>
           </div>
         </div>
-        
       </div>
     </footer>
   </body>

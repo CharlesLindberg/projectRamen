@@ -4,128 +4,178 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,900;6..12,1000&display=swap" rel="stylesheet">
-
-   <title>Koi Noodle Bar</title>
-    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,900;6..12,1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <title>Koi Noodle Bar</title>
   </head>
-  <body class="bod-om-oss">
+  <body class="bod-about-us">
     <header>
-      <nav>
-        <!-- <div class="nav-img"> -->
-       
-      <!-- </div> -->
-        <ul>
-          <li><img src="./images/koiFishLogo.png" alt="Logo"></li>
-          <li>Hem</li>
-          <li>Meny</li>
-          <li class="nav-oss">Om oss</li>
-          <li>Recensioner</li>
-          <li>Kontakt</li>
+      <!-- <nav role="navigation" >
+        <ul role="list" aria-label="Main Navigation">
+          <li><img src="/images/RamenLogo.png" alt="Koi Ramen Logo" /></li>
+          <li><a href="/index.html" class="nav-item">Hem</a></li>
+          <li class="meny"><a href="/meny.html" class="nav-item">Meny</a></li>
+          <li><a href="/omoss.html" class="nav-item active">Om oss</a></li>
+          <li>
+            <a href="/recensioner.html" class="nav-item"> Recensioner</a>
+          </li>
+          <li><a href="/kontakt.html" class="nav-item"> Kontakt</a></li>
         </ul>
+      </nav> -->
+
+   
+
+      <nav class="topnav" id="myTopnav" role="navigation" aria-label="Main Navigation">
+        <a href="#home" class="active"><img src="./images/RamenLogo.png" alt="Koi fish logo"
+            height="75px"
+            width="75px"></a>
+        <a href="./index.html">Hem</a>
+        <a href="./meny.html">Meny</a>
+        <a href="./omoss.html">Om oss</a>
+        <a href="./recensioner.html">Recensioner</a>
+        <a href="./kontakt.html">Kontakt</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
+
+
+
+
+      
     </header>
-    <main class="om-oss">
-        <div class="oss-title">
-            <h1>Om Oss</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis harum, tempore cumque itaque repudiandae quisquam.</p>
-        </div>
-        <div class="container-oss">
+    <main class="about-us">
+      <div class="about-title">
+        <h1>Om Oss</h1>
+        <h2 class="slogan">"Slurp your way into serenity."</h2>
+        <p>
+            I staden öppnade Yuki nytänkande ramenrestaurang, Koi Noodle Bar, 
+            och erbjöd en smakupplevelse utöver det vanliga. Med en inbjudande atmosfär 
+            och varierad meny blev restaurangen snabbt en lokal favorit och en samlingspunkt 
+            för gemenskap och kreativitet. Yuki hade skapat mer än en restaurang; 
+            han hade formulerat en berättelse om passion,
+             gemenskap och att förverkliga sina drömmar genom konsten att njuta av ramen.
+        </p>
+      </div>    
+            
+        <div class="container-about">
             <h2>Våra anställda</h2>
             <div class="employee">
                 <div class="employee-pictures">
-                    <img src="./images/employee1-cottonbro-studio.jpg" alt="Picture of Jason">
-                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles">
+                    <img src="./images/employee1-cottonbro-studio.jpg" alt="Picture of Jason Malmoa">
+                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles" role="presentation">
                 </div>
-                <h3>Jason Malmoa</h3>
-                <p>I've been a chef for 12 years, curretly working as the lead chef at Koi Ramen.</p>
-                <p>Email: Jason.malmoa12@hotmail.com</p>
+                <div class="employee-text">
+                    <h3>Jason Malmoa</h3>
+                    <p>I've been a chef for 12 years, curretly working as the lead chef at Koi Ramen.</p>
+                    <p>Email: Jason.malmoa12@hotmail.com</p>
+                </div>
             </div>
             <div class="employee">
                 <div class="employee-pictures">
-                    <img src="./images/employee2-castorly-stock.jpg" alt="Picture of Jason">
-                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles">
+                    <img src="./images/employee2-castorly-stock.jpg" alt="Picture of Bot Botsson">
+                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles" role="presentation">
                 </div>
-                <h3>Bot Botsson</h3>
-                <p>I've been a dishwasher for my whole life, hard-working as long as there is power.</p>
-                <p>Email: bot.botsson@dropTableEmployees.com</p>
+                <div class="employee-text">
+                    <h3>Bot Botsson</h3>
+                    <p>I've been a dishwasher for my whole life, hard-working as long as there is power.</p>
+                    <p>Email: bot.botsson@dropTableEmployees.com</p>
+                </div>
             </div>
             <div class="employee">
                 <div class="employee-pictures">
-                    <img src="./images/employee3-katerina-holmes.jpg" alt="Picture of Jason">
-                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles">
+                    <img src="./images/employee3-katerina-holmes.jpg" alt="Picture of Nii Moriko">
+                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles" role="presentation">
                 </div>
-                <h3>Nii Moriko</h3>
-                <p>Hello! I'm working as a chef at Koi Ramen since the beginning. Been a waitress and chef for almost 8 years.</p>
-                <p>Email: nii.moriko@gmail.com</p>
+                <div class="employee-text">
+                    <h3>Nii Moriko</h3>
+                    <p>Hello! I've been working as a chef at Koi Ramen since the beginning. Been a chef for
+                        8 years.</p>
+                    <p>Email: nii.moriko@gmail.com</p>
+                </div>
             </div>
             <div class="employee">
                 <div class="employee-pictures">
-                    <img src="./images/employee1-cottonbro-studio.jpg" alt="Picture of Jason">
-                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles">
+                    <img src="./images/employee4-eiliv-aceron.jpg" alt="Picture of Mark Lillard">
+                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles" role="presentation">
                 </div>
-                <h3>Jason Malmoa</h3>
-                <p>I've been a chef for 12 years, curretly working as the lead chef at Koi Ramen.</p>
-                <p>Email: Jason.malmoa12@hotmail.com</p>
+                <div class="employee-text">
+                    <h3>Mark Lillard</h3>
+                    <p>Been in the industry for about 3 years. Working as the waitress manager/chef.</p>
+                    <p>Email: lillard.mark@hotmail.com</p>
+                </div>
             </div>
             <div class="employee">
                 <div class="employee-pictures">
-                    <img src="./images/employee1-cottonbro-studio.jpg" alt="Picture of Jason">
-                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles">
+                    <img src="./images/employee5febrian-zakaria.jpg" alt="Picture of Yuki Tsunoda">
+                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles" role="presentation">
                 </div>
-                <h3>Jason Malmoa</h3>
-                <p>I've been a chef for 12 years, curretly working as the lead chef at Koi Ramen.</p>
-                <p>Email: Jason.malmoa12@hotmail.com</p>
+                <div class="employee-text">
+                    <h3>Yuki Tsunoda</h3>
+                    <p>Used to be a F1 driver, now working at my dream job as a restaurant part-owner and Chef.</p>
+                    <p>Email: YukiTheFast@hotmail.com</p>
+                </div>
             </div>
             <div class="employee">
                 <div class="employee-pictures">
-                    <img src="./images/employee1-cottonbro-studio.jpg" alt="Picture of Jason">
-                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles">
+                    <img src="./images/employee6.jpg" alt="Picture of Hiroshi Tanaka">
+                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles" role="presentation">
                 </div>
-                <h3>Jason Malmoa</h3>
-                <p>I've been a chef for 12 years, curretly working as the lead chef at Koi Ramen.</p>
-                <p>Email: Jason.malmoa12@hotmail.com</p>
+                <div class="employee-text">
+                    <h3>Hiroshi Tanaka</h3>
+                    <p>Been working with the owner since I was a kid. Always been fun to be a part of his work.</p>
+                    <p>Email: hiroshi.tanaka@hotmail.com</p>
+                </div>
+                
             </div>
-        </div>
+
+      </div>
     </main>
-      <footer>
+    <footer>
       <div class="row">
-        <div class="contact">
+        <div class="contact" aria-label="Contact Information">
           <p>
-            Mail: <br>
-            Telefon: <br>
-            Adress: <br>
+            Mail: <br />
+            Telefon: <br />
+            Adress: <br />
             copywright:
           </p>
         </div>
         <div class="contact">
           <h3>Öppettider</h3>
-          <p>Måndag: 11-21 <br>
-            Tisdag: 11-21 <br>
-            Onsdag: 11-23 <br>
-            Torsdag: 11-23 <br>
-            Fredag: 11-23 <br>
-            Lördag: 11-23 <br>
-            Söndag: 11-21 <br>
+          <p>
+            Måndag: 11-21 <br />
+            Tisdag: 11-21 <br />
+            Onsdag: 11-23 <br />
+            Torsdag: 11-23 <br />
+            Fredag: 11-23 <br />
+            Lördag: 11-23 <br />
+            Söndag: 11-21 <br />
           </p>
         </div>
       </div>
-      <div class="img-holder"><img src="./images/nudlar2-removebg-preview.png" alt="nudlar"></div>
+      <div class="img-holder">
+        <img src="./images/nudlar2-removebg-preview.png" alt="nudlar" />
+      </div>
       <div class="row">
-        <div class="footer-nav">
-          <p>Om Oss</p> 
-            <p>Meny</p> 
+        <div class="footer-nav" role="navigation">
+          <p role="link">Om Oss</p>
+          <p role="link">Meny</p>
         </div>
         <div class="line">
-          <hr>
+          <hr />
         </div>
         <div class="row">
-          <div class="footer-nav">
-            <p>Kontakt</p>
-            <p>Recensioner</p>
+          <div class="footer-nav" role="navigation">
+            <p role="link">Kontakt</p>
+            <p role="link">Recensioner</p>
           </div>
         </div>
       </div>

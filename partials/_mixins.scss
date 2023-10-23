@@ -1,0 +1,8 @@
+@mixin flex-column{
+    display:flex;
+    flex-direction:column;
+}
+
+@mixin nunito{
+    font-family:'Nunito Sans', sans-serif;
+}
