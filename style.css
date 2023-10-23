@@ -1,39 +1,70 @@
 @charset "UTF-8";
-nav {
-  background-color: #88593e;
+.topnav {
+  background-color: #fbecd3;
+  overflow: hidden;
   font-family: "Nunito Sans", sans-serif;
-  padding: 12px;
-  height: 120px;
-  font-weight: 200;
-  text-transform: uppercase;
-  color: #fbecd3;
-}
-nav img {
-  height: 110px;
-}
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style-type: none;
-  align-items: center;
-  padding: 0;
-}
-nav ul li .nav-item {
-  text-decoration: none;
-  color: #fbecd3;
-}
-nav ul li .active {
-  border-bottom: 2px solid #fbecd3;
 }
 
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:not(:first-child) {
+  display: none;
+  padding: 29px 36px;
+}
+
+.topnav a:hover {
+  background-color: #fbecd3;
+  color: red;
+}
+
+.topnav a.active {
+  background-color: #f92737;
+  color: white;
+}
+
+.topnav a.icon {
+  float: right;
+  display: block;
+}
+
+.topnav.responsive {
+  position: relative;
+}
+
+.topnav.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+@media screen and (min-width: 800px) {
+  .topnav a:not(:first-child) {
+    display: block;
+  }
+  .topnav a.icon {
+    display: none;
+  }
+}
 .row {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-x hr {
+hr {
   height: 85px;
 }
 
@@ -164,12 +195,13 @@ footer .footer-nav p {
 
 .recension {
   border: 1px solid #06b5ab;
-  height: 145px;
+  height: 165px;
   width: 70%;
   border-radius: 4px;
-  background-color: #fbecd3;
+  background-color: whitesmoke;
   box-sizing: border-box;
   padding: 12px;
+  box-shadow: 1px 1px 7px black;
   font-family: "Nunito Sans", sans-serif;
 }
 .recension h3 {
@@ -228,9 +260,10 @@ footer .footer-nav p {
 .text-form .rec-row textarea#rec-text {
   height: 200px;
   width: 60%;
-  border: 4px solid #06b5ab;
-  background-color: #fbecd3;
+  border: 1px solid #06b5ab;
+  background-color: whitesmoke;
   border-radius: 4px;
+  box-shadow: 1px 1px 7px black;
 }
 .text-form .rec-row input[type=text] {
   margin-left: 24px;
@@ -240,14 +273,13 @@ footer .footer-nav p {
 
 label {
   width: 95px;
-  color: #fbecd3;
+  color: black;
 }
 
 .sent {
   display: none;
   height: 400px;
   width: 400px;
-  background: red;
   position: absolute;
   bottom: 30%;
   left: 25%;
@@ -292,9 +324,69 @@ label {
     width: 60%;
   }
 }
-.container-oss {
+.topnav {
+  background-color: #fbecd3;
+  overflow: hidden;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:not(:first-child) {
+  display: none;
+  padding: 29px 36px;
+}
+
+.topnav a:hover {
+  background-color: #fbecd3;
+  color: red;
+}
+
+.topnav a.active {
+  background-color: #f92737;
+  color: white;
+}
+
+.topnav a.icon {
+  float: right;
+  display: block;
+}
+
+.topnav.responsive {
+  position: relative;
+}
+
+.topnav.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+@media screen and (min-width: 800px) {
+  .topnav a:not(:first-child) {
+    display: block;
+  }
+  .topnav a.icon {
+    display: none;
+  }
+}
+.container-about {
   display: flex;
   flex-direction: column;
+  font-family: "Nunito Sans", sans-serif;
   justify-content: space-evenly;
   gap: 20px;
   width: 100%;
@@ -304,16 +396,13 @@ label {
   padding-bottom: 24px;
 }
 
-.nav-oss {
-  border-bottom: 2px solid #f92737;
-}
-
 .employee {
   font-family: "Nunito Sans", sans-serif;
   height: 215px;
   width: 300px;
   display: flex;
   flex-direction: column;
+  box-shadow: 2px 2px 9px black;
   background-color: rgba(194, 248, 255, 0.3019607843);
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
@@ -342,28 +431,68 @@ label {
   font-weight: 400;
   margin: 4px 0px;
 }
-.employee p:nth-of-type(1) {
+.employee p {
   font-size: 12px;
 }
 .employee p:nth-of-type(2) {
   font-weight: 600;
-  font-size: 12px;
 }
 
-.oss-title {
+.about-title {
   display: flex;
   flex-direction: column;
+  font-family: "Nunito Sans", sans-serif;
   align-items: center;
-  background: h1, p;
-  background-width: 70%;
-  background-text-align: center;
+  justify-content: center;
+}
+.about-title p {
+  width: 80%;
+}
+.about-title h2 {
+  align-self: center;
+}
+.about-title .slogan {
+  font-weight: 300;
 }
 
-.om-oss {
+.about-us {
   background: url("/images/wood-background2-tirachard-kumtanom.jpg");
 }
 
-
+@media (min-width: 1024px) {
+  .employee {
+    width: 80%;
+    height: 350px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .employee .employee:not(.employee-pictures) {
+    justify-content: center;
+  }
+  .employee .employee-pictures {
+    width: 600px;
+    justify-content: space-evenly;
+  }
+  .employee .employee-pictures img {
+    min-width: 30%;
+    max-width: 50%;
+  }
+  .employee .employee-pictures img:nth-of-type(2) {
+    display: none;
+  }
+  .employee .employee-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+  }
+  .employee .employee-text p {
+    font-size: 20px;
+  }
+  .employee .employee-text h3 {
+    font-size: 26px;
+  }
+}
 main {
   background-color: #fbecd3;
   border-top: solid turquoise;
@@ -427,39 +556,11 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
   }
-  h2 {
+  .rubrikkontakt {
     position: relative;
     bottom: 200px;
   }
-  
-    .employee {
-    width: 80%;
-    height: 350px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .employee .employee:not(.employee-pictures) {
-    justify-content: center;
-  }
-  .employee .employee-pictures {
-    width: 600px;
-    justify-content: space-evenly;
-  }
-  .employee .employee-pictures img {
-    min-width: 30%;
-    max-width: 50%;
-  }
-  .employee .employee-pictures img:nth-of-type(2) {
-    display: none;
-  }
-  .employee .employee-text {
-    display: flex;
-    flex-direction: column;
-  }
 }
-}
-
 body {
   margin: 0;
   padding: 0;

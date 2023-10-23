@@ -6,13 +6,13 @@
 
 .recension {
     border: 1px solid $colorTurqoise;
-    height: 145px;
+    height: 165px;
     width: 70%;
     border-radius: 4px;
-    background-color:$colorBeige;
+    background-color:whitesmoke;
     box-sizing: border-box;
     padding:12px;
-    
+    box-shadow: 1px 1px 7px black;
     font-family: 'Nunito Sans', sans-serif;
 
     h3 {
@@ -35,7 +35,6 @@
         margin-bottom:0px;
     }
 }
-
 
 .rec-title h1 {
     font-family: 'Nunito Sans', sans-serif;
@@ -79,9 +78,10 @@
         textarea#rec-text{
             height:200px;
             width:60%;
-            border:4px solid $colorTurqoise;
-            background-color: $colorBeige;
+            border:1px solid $colorTurqoise;
+            background-color: whitesmoke;
             border-radius: 4px;
+            box-shadow: 1px 1px 7px black;
         }
     
         input[type="text"]{
@@ -94,14 +94,13 @@
 
 label {
     width:95px;
-    color:$colorBeige;
+    color:black;
 }
 
 .sent {
     display:none;
     height:400px;
     width:400px;
-    background:red;
     position:absolute;
     bottom:30%;
     left:25%;
@@ -130,13 +129,8 @@ label {
             .container .sent {
                 display:inline-block;
             }
-        }
-
-        
-
-        
-    }
-    
+        }  
+    }   
 }
 
 
