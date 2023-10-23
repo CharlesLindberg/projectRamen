@@ -91,12 +91,26 @@ footer .img-holder img {
 footer .contact {
   font-family: "Nova Square", sans-serif;
 }
-footer .footer-nav {
+footer .contact-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+footer .contact-information p {
+  margin: 12px 0px 0px 0px;
+  font-family: "Nova Square", sans-serif;
+}
+
+.footer-nav {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 200;
+  display: flex;
+  flex-direction: column;
 }
-footer .footer-nav p {
+.footer-nav a {
   height: 20px;
+  text-decoration: none;
+  color: #fbecd3;
 }
 
 .meny .content {
@@ -493,7 +507,7 @@ label {
     font-size: 26px;
   }
 }
-main {
+.main-kontakt {
   background-color: #fbecd3;
   border-top: solid turquoise;
   font-family: "Nova Square", sans-serif;
