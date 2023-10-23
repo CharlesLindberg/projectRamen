@@ -2,7 +2,6 @@
 .topnav {
   background-color: #fbecd3;
   overflow: hidden;
-  height: 63px;
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -11,13 +10,13 @@
   display: block;
   color: black;
   text-align: center;
-  padding: 20px 36px;
   text-decoration: none;
   font-size: 17px;
 }
 
 .topnav a:not(:first-child) {
   display: none;
+  padding: 29px 36px;
 }
 
 .topnav a:hover {
@@ -35,14 +34,6 @@
   display: block;
 }
 
-@media screen and (min-width: 800px) {
-  .topnav a:not(:first-child) {
-    display: block;
-  }
-  .topnav a.icon {
-    display: none;
-  }
-}
 .topnav.responsive {
   position: relative;
 }
@@ -59,6 +50,14 @@
   text-align: left;
 }
 
+@media screen and (min-width: 800px) {
+  .topnav a:not(:first-child) {
+    display: block;
+  }
+  .topnav a.icon {
+    display: none;
+  }
+}
 .row {
   display: flex;
   justify-content: space-around;
@@ -328,7 +327,6 @@ label {
 .topnav {
   background-color: #fbecd3;
   overflow: hidden;
-  height: 63px;
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -337,13 +335,13 @@ label {
   display: block;
   color: black;
   text-align: center;
-  padding: 20px 36px;
   text-decoration: none;
   font-size: 17px;
 }
 
 .topnav a:not(:first-child) {
   display: none;
+  padding: 29px 36px;
 }
 
 .topnav a:hover {
@@ -361,14 +359,6 @@ label {
   display: block;
 }
 
-@media screen and (min-width: 800px) {
-  .topnav a:not(:first-child) {
-    display: block;
-  }
-  .topnav a.icon {
-    display: none;
-  }
-}
 .topnav.responsive {
   position: relative;
 }
@@ -385,6 +375,14 @@ label {
   text-align: left;
 }
 
+@media screen and (min-width: 800px) {
+  .topnav a:not(:first-child) {
+    display: block;
+  }
+  .topnav a.icon {
+    display: none;
+  }
+}
 .container-about {
   display: flex;
   flex-direction: column;
