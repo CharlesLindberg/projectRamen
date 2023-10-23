@@ -14,14 +14,14 @@
 
     <title>Koi Noodle Bar</title>
   </head>
-  <body class="bod-om-oss">
+  <body class="bod-about-us">
     <header>
-      <nav>
+      <nav role="navigation" >
         <!-- <div class="nav-img"> -->
 
         <!-- </div> -->
-        <ul>
-          <li><img src="/images/RamenLogo.png" alt="Logo" /></li>
+        <ul role="list" aria-label="Main Navigation">
+          <li><img src="/images/RamenLogo.png" alt="Koi Ramen Logo" /></li>
           <li><a href="/index.html" class="nav-item">Hem</a></li>
           <li class="meny"><a href="/meny.html" class="nav-item">Meny</a></li>
           <li><a href="/omoss.html" class="nav-item active">Om oss</a></li>
@@ -32,71 +32,82 @@
         </ul>
       </nav>
     </header>
-    <main class="om-oss">
-      <div class="oss-title">
+    <main class="about-us">
+      <div class="about-title">
         <h1>Om Oss</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
           harum, tempore cumque itaque repudiandae quisquam.
         </p>
-      </div>        
+      </div>    
+            
         <div class="container-oss">
             <h2>Våra anställda</h2>
             <div class="employee">
                 <div class="employee-pictures">
                     <img src="./images/employee1-cottonbro-studio.jpg" alt="Picture of Jason Malmoa">
-                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles">
+                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles" role="presentation">
                 </div>
-                <h3>Jason Malmoa</h3>
-                <p>I've been a chef for 12 years, curretly working as the lead chef at Koi Ramen.</p>
-                <p>Email: Jason.malmoa12@hotmail.com</p>
+                <div class="employee-text">
+                    <h3>Jason Malmoa</h3>
+                    <p>I've been a chef for 12 years, curretly working as the lead chef at Koi Ramen.</p>
+                    <p>Email: Jason.malmoa12@hotmail.com</p>
+                </div>
             </div>
             <div class="employee">
                 <div class="employee-pictures">
                     <img src="./images/employee2-castorly-stock.jpg" alt="Picture of Bot Botsson">
-                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles">
+                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles" role="presentation">
                 </div>
-                <h3>Bot Botsson</h3>
-                <p>I've been a dishwasher for my whole life, hard-working as long as there is power.</p>
-                <p>Email: bot.botsson@dropTableEmployees.com</p>
+                <div class="employee-text">
+                    <h3>Bot Botsson</h3>
+                    <p>I've been a dishwasher for my whole life, hard-working as long as there is power.</p>
+                    <p>Email: bot.botsson@dropTableEmployees.com</p>
+                </div>
             </div>
             <div class="employee">
                 <div class="employee-pictures">
                     <img src="./images/employee3-katerina-holmes.jpg" alt="Picture of Nii Moriko">
-                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles">
+                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles" role="presentation">
                 </div>
-                <h3>Nii Moriko</h3>
-                <p>Hello! I've been working as a chef at Koi Ramen since the beginning. Been a chef for
-                     8 years.</p>
-                <p>Email: nii.moriko@gmail.com</p>
+                <div class="employee-text">
+                    <h3>Nii Moriko</h3>
+                    <p>Hello! I've been working as a chef at Koi Ramen since the beginning. Been a chef for
+                        8 years.</p>
+                    <p>Email: nii.moriko@gmail.com</p>
+                </div>
             </div>
             <div class="employee">
                 <div class="employee-pictures">
                     <img src="./images/employee4-eiliv-aceron.jpg" alt="Picture of Mark Lillard">
-                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles">
+                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles" role="presentation">
                 </div>
-                <h3>Mark Lillard</h3>
-                <p>Been in the industry for about 3 years. Working as the waitress manager/chef.</p>
-                <p>Email: super.mark1@hotmail.com</p>
+                <div class="employee-text">
+                    <h3>Mark Lillard</h3>
+                    <p>Been in the industry for about 3 years. Working as the waitress manager/chef.</p>
+                    <p>Email: lillard.mark@hotmail.com</p>
+                </div>
             </div>
             <div class="employee">
                 <div class="employee-pictures">
                     <img src="./images/employee5febrian-zakaria.jpg" alt="Picture of Yuki Tsunoda">
-                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles">
+                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles" role="presentation">
                 </div>
-                <h3>Yuki Tsunoda</h3>
-                <p>Used to be a F1 driver, now working at my dream job as a restaurant part-owner and Chef.</p>
-                <p>Email: Jason.malmoa12@hotmail.com</p>
+                <div class="employee-text">
+                    <h3>Yuki Tsunoda</h3>
+                    <p>Used to be a F1 driver, now working at my dream job as a restaurant part-owner and Chef.</p>
+                    <p>Email: YukiTheFast@hotmail.com</p>
+                </div>
             </div>
             <div class="employee">
                 <div class="employee-pictures">
                     <img src="./images/employee6.jpg" alt="Picture of Hiroshi Tanaka">
-                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles">
+                    <img src="./images/nudlar2-removebg-preview.png" alt="Noodles" role="presentation">
                 </div>
                 <div class="employee-text">
                     <h3>Hiroshi Tanaka</h3>
                     <p>Been working with the owner since I was a kid. Always been fun to be a part of his work.</p>
-                    <p>Email: Jason.malmoa12@hotmail.com</p>
+                    <p>Email: hiroshi.tanaka@hotmail.com</p>
                 </div>
                 
             </div>
@@ -105,7 +116,7 @@
     </main>
     <footer>
       <div class="row">
-        <div class="contact">
+        <div class="contact" aria-label="Contact Information">
           <p>
             Mail: <br />
             Telefon: <br />
@@ -130,17 +141,17 @@
         <img src="./images/nudlar2-removebg-preview.png" alt="nudlar" />
       </div>
       <div class="row">
-        <div class="footer-nav">
-          <p>Om Oss</p>
-          <p>Meny</p>
+        <div class="footer-nav" role="navigation">
+          <p role="link">Om Oss</p>
+          <p role="link">Meny</p>
         </div>
         <div class="line">
           <hr />
         </div>
         <div class="row">
-          <div class="footer-nav">
-            <p>Kontakt</p>
-            <p>Recensioner</p>
+          <div class="footer-nav" role="navigation">
+            <p role="link">Kontakt</p>
+            <p role="link">Recensioner</p>
           </div>
         </div>
       </div>
