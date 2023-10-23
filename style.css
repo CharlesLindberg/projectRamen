@@ -100,7 +100,6 @@ footer .footer-nav p {
 }
 
 .meny .content {
-  border: 1px solid black;
   background-color: #9fcec3;
   font-family: "Nunito Sans", sans-serif;
   color: rgb(53, 53, 53);
@@ -152,6 +151,10 @@ footer .footer-nav p {
   border-radius: 10px;
   margin: 10px;
 }
+.meny .content .container {
+  position: relative;
+  bottom: 100px;
+}
 
 .entrees {
   border: 1px solid #fbecd3;
@@ -181,7 +184,7 @@ footer .footer-nav p {
     flex-direction: row;
   }
   .rubrik h2,
-  .rubrik p {
+.rubrik p {
     position: relative;
     bottom: 60vw;
   }
@@ -459,67 +462,6 @@ label {
   background: url("/images/wood-background2-tirachard-kumtanom.jpg");
 }
 
-.startsida div {
-  font-family: "nunito sans", sans-serif;
-  width: 100%;
-  background-color: #f92737;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.startsida div img {
-  width: 100%;
-}
-.startsida div h1 {
-  position: relative;
-  bottom: 110vh;
-  left: 10vw;
-  color: #fbecd3;
-  font-size: 100px;
-}
-.startsida div button {
-  margin-top: 16px;
-  height: 50px;
-  width: 180px;
-  font-size: 21px;
-  background-color: rgb(53, 53, 53);
-  border: none;
-  border-radius: 4px;
-  color: #fbecd3;
-  position: relative;
-  bottom: 300px;
-}
-.startsida div button a {
-  text-decoration: none;
-  color: #fbecd3;
-}
-.startsida div button:hover {
-  background-color: rgb(72, 67, 67);
-  cursor: pointer;
-}
-.startsida .bar {
-  color: rgb(53, 53, 53);
-  background-color: #fbecd3;
-}
-.startsida .bar h2 {
-  position: relative;
-  bottom: 230px;
-  color: #fbecd3;
-  font-size: 50px;
-  background-color: rgba(0, 0, 0, 0.508);
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
-}
-.startsida .bar .text {
-  width: 60%;
-  background-color: #9fcec3;
-  border-radius: 20px;
-  text-align: center;
-  margin-bottom: 10px;
-  padding: 10px;
-=======
-=======
 @media (min-width: 1024px) {
   .employee {
     width: 80%;
@@ -554,7 +496,6 @@ label {
     font-size: 26px;
   }
 }
-
 main {
   background-color: #fbecd3;
   border-top: solid turquoise;
@@ -622,7 +563,121 @@ main {
     position: relative;
     bottom: 200px;
   }
+}
+.startsida div {
+  font-family: "nunito sans", sans-serif;
+  width: 100%;
+  background-color: #f92737;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.startsida div img {
+  width: 100%;
+}
+.startsida div .desktop {
+  display: none;
+}
+.startsida div h1 {
+  position: relative;
+  bottom: 60vh;
+  left: 10vw;
+  color: #fbecd3;
+  font-size: 70px;
+}
+.startsida div .btn {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.startsida div button {
+  margin-top: 16px;
+  height: 50px;
+  width: 180px;
+  font-size: 21px;
+  background-color: rgb(53, 53, 53);
+  border: none;
+  border-radius: 4px;
+  color: #fbecd3;
+}
+.startsida div button a {
+  text-decoration: none;
+  color: #fbecd3;
+}
+.startsida div button:hover {
+  background-color: rgb(72, 67, 67);
+  cursor: pointer;
+}
+.startsida .bar {
+  color: rgb(53, 53, 53);
+  background-color: #9fcec3;
+}
+.startsida .bar h2 {
+  position: relative;
+  bottom: 230px;
+  color: #f92737;
+  font-size: 50px;
+  font-family: "Cedarville Cursive", cursive;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+}
+.startsida .bar hr {
+  width: 120px;
+  height: 1px;
+  background-color: black;
+  border: none;
+}
+.startsida .bar .text {
+  width: 60%;
+  background-color: #fbecd3;
+  color: rgb(53, 53, 53);
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  position: relative;
+  bottom: 10vh;
+}
+.startsida .bar .text h3 {
+  font-family: "nova square";
+  font-size: 40px;
+}
+.startsida .bar .text p {
+  font-style: italic;
+}
 
+@media (min-width: 1024px) {
+  .mobile {
+    display: none;
+  }
+  .startsida div h1 {
+    font-size: 120px;
+    position: relative;
+    bottom: 100vh;
+    left: 2vw;
+  }
+  .startsida div button {
+    bottom: 150px;
+  }
+  .startsida div .desktop {
+    display: block;
+  }
+  .startsida .bar h2 {
+    position: relative;
+    bottom: 900px;
+    color: #f92737;
+    font-size: 120px;
+    font-family: "Cedarville Cursive", cursive;
+  }
+  .startsida .bar .text {
+    position: relative;
+    bottom: 40vh;
+  }
 }
 body {
   margin: 0;
