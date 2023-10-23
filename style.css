@@ -1,3 +1,4 @@
+@charset "UTF-8";
 nav {
   background-color: #88593e;
   font-family: "Nunito Sans", sans-serif;
@@ -149,7 +150,7 @@ footer .footer-nav p {
     flex-direction: row;
   }
   .rubrik h2,
-.rubrik p {
+  .rubrik p {
     position: relative;
     bottom: 60vw;
   }
@@ -357,6 +358,7 @@ label {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .startsida div {
   font-family: "nunito sans", sans-serif;
   width: 100%;
@@ -416,6 +418,75 @@ label {
   text-align: center;
   margin-bottom: 10px;
   padding: 10px;
+=======
+main {
+  background-color: #fbecd3;
+  border-top: solid turquoise;
+  font-family: "Nova Square", sans-serif;
+}
+
+.linje {
+  border-bottom: solid red;
+}
+
+.Kontakt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 60px;
+}
+.Kontakt img {
+  height: 200px;
+}
+.Kontakt .formulär {
+  background-color: beige;
+  padding: 15px;
+  border: solid #06b5ab;
+  border-radius: 4px;
+}
+.Kontakt .formulär #button {
+  color: white;
+  background-color: #06b5ab;
+  border-radius: 4px;
+  border: none;
+  padding: 15px;
+}
+
+.byggvideo {
+  width: 100%;
+}
+.byggvideo video {
+  max-width: 100%;
+  filter: blur(2px);
+}
+.byggvideo h2 {
+  position: relative;
+  bottom: 35vw;
+  text-align: center;
+  color: #fbecd3;
+  font-family: "nunito sans", sans-serif;
+  font-size: 6vw;
+}
+.byggvideo h3 {
+  position: relative;
+  text-align: center;
+  color: #fbecd3;
+  bottom: 35vw;
+  font-size: 3vw;
+}
+
+@media (min-width: 1024px) {
+  .Kontakt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  h2 {
+    position: relative;
+    bottom: 200px;
+  }
+>>>>>>> a47d76ad52d7f3f0c4ee8f36fabfc442db727978
 }
 
 body {
