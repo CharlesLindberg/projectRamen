@@ -35,12 +35,28 @@ footer {
     font-family: "Nova Square", sans-serif;
   }
 
+  .contact-information {
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+
+    p {
+      margin: 12px 0px 0px 0px;
+      font-family: "Nova Square", sans-serif;
+    }
+    }
+  }
+
   .footer-nav {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 200;
+    display:flex;
+    flex-direction:column;
 
-    p {
+    a {
       height: 20px;
+      text-decoration: none;
+      color:$colorBeige;
     }
   }
-}
+

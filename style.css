@@ -91,12 +91,26 @@ footer .img-holder img {
 footer .contact {
   font-family: "Nova Square", sans-serif;
 }
-footer .footer-nav {
+footer .contact-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+footer .contact-information p {
+  margin: 12px 0px 0px 0px;
+  font-family: "Nova Square", sans-serif;
+}
+
+.footer-nav {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 200;
+  display: flex;
+  flex-direction: column;
 }
-footer .footer-nav p {
+.footer-nav a {
   height: 20px;
+  text-decoration: none;
+  color: #fbecd3;
 }
 
 .meny .content {
@@ -184,7 +198,7 @@ footer .footer-nav p {
     flex-direction: row;
   }
   .rubrik h2,
-.rubrik p {
+  .rubrik p {
     position: relative;
     bottom: 60vw;
   }
@@ -193,7 +207,7 @@ footer .footer-nav p {
   background: url("./images/alley-eva-bronzini.jpg");
   background-size: cover;
   -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 }
 
 .recension {
@@ -268,7 +282,7 @@ footer .footer-nav p {
   border-radius: 4px;
   box-shadow: 1px 1px 7px black;
 }
-.text-form .rec-row input[type=text] {
+.text-form .rec-row input[type="text"] {
   margin-left: 24px;
   border: 1px solid #06b5ab;
   background: #fbecd3;
@@ -292,7 +306,7 @@ label {
   display: flex;
   flex-direction: column;
 }
-.rec-row:nth-of-type(3) input[type=submit] {
+.rec-row:nth-of-type(3) input[type="submit"] {
   margin-top: 16px;
   height: 50px;
   width: 120px;
@@ -302,12 +316,12 @@ label {
   border-radius: 4px;
   color: #fbecd3;
 }
-.rec-row:nth-of-type(3) input[type=submit]:hover {
+.rec-row:nth-of-type(3) input[type="submit"]:hover {
   cursor: pointer;
   background: #fbecd3;
   color: black;
 }
-.rec-row:nth-of-type(3) input[type=submit]:active .container .sent {
+.rec-row:nth-of-type(3) input[type="submit"]:active .container .sent {
   display: inline-block;
 }
 
@@ -395,7 +409,7 @@ label {
   width: 100%;
   align-items: center;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   padding-bottom: 24px;
 }
 
@@ -408,7 +422,7 @@ label {
   box-shadow: 2px 2px 9px black;
   background-color: rgba(194, 248, 255, 0.3019607843);
   -webkit-backdrop-filter: blur(12px);
-          backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   box-sizing: border-box;
   padding: 12px;
   border-radius: 4px;
@@ -424,7 +438,7 @@ label {
   border-radius: 50%;
   aspect-ratio: 1;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .employee img:nth-of-type(2) {
   min-width: 20px;
@@ -496,7 +510,7 @@ label {
     font-size: 26px;
   }
 }
-main {
+.main-kontakt {
   background-color: #fbecd3;
   border-top: solid turquoise;
   font-family: "Nova Square", sans-serif;
@@ -624,7 +638,7 @@ main {
   font-size: 50px;
   font-family: "Cedarville Cursive", cursive;
   -webkit-backdrop-filter: blur(1px);
-          backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
 }
 .startsida .bar hr {
   width: 120px;
@@ -682,4 +696,4 @@ main {
 body {
   margin: 0;
   padding: 0;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
