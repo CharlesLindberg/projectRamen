@@ -13,3 +13,15 @@ function myFunction() {
   }
   
 }
+
+function openForm() {
+  document.getElementById("popupForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("popupForm").style.display = "none";
+}
+
+document.querySelector(".btn-boka").addEventListener("click", () => {
+  alert("Bokningen är gjord!")
+})
