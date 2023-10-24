@@ -205,7 +205,7 @@ footer .contact-information p {
     flex-direction: row;
   }
   .rubrik h2,
-.rubrik p {
+  .rubrik p {
     position: relative;
     bottom: 60vw;
   }
@@ -528,7 +528,6 @@ label {
 }
 .main-kontakt {
   background-color: #fbecd3;
-  border-top: solid turquoise;
   font-family: "Nova Square", sans-serif;
 }
 
@@ -563,13 +562,13 @@ label {
 .byggvideo {
   width: 100%;
 }
-.byggvideo video {
+.byggvideo img {
   max-width: 100%;
-  filter: blur(2px);
+  height: 10%;
 }
 .byggvideo h2 {
   position: relative;
-  bottom: 35vw;
+  bottom: 55vw;
   text-align: center;
   color: #fbecd3;
   font-family: "nunito sans", sans-serif;
@@ -579,7 +578,7 @@ label {
   position: relative;
   text-align: center;
   color: #fbecd3;
-  bottom: 35vw;
+  bottom: 60vw;
   font-size: 3vw;
 }
 
@@ -684,7 +683,38 @@ label {
   font-style: italic;
 }
 
-
+@media (min-width: 1024px) {
+  .mobile {
+    display: none;
+  }
+  .startsida .pics {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .startsida div h1 {
+    font-size: 120px;
+    position: absolute;
+    bottom: 20vh;
+    left: 5vw;
+  }
+  .startsida div button {
+    bottom: 150px;
+  }
+  .startsida div .desktop {
+    display: block;
+  }
+  .startsida .bar h2 {
+    position: relative;
+    bottom: 900px;
+    color: #f92737;
+    font-size: 120px;
+    font-family: "Cedarville Cursive", cursive;
+  }
+  .startsida .bar .text {
+    position: relative;
+    bottom: 40vh;
+  }
+}
 .openBtn {
   display: flex;
   justify-content: center;
@@ -762,41 +792,6 @@ label {
 .formContainer .btn-boka:hover,
 .openButton:hover {
   opacity: 1;
-}
-
-
-@media (min-width: 1024px) {
-  .mobile {
-    display: none;
-  }
-  .startsida .pics {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  .startsida div h1 {
-    font-size: 120px;
-    position: absolute;
-    bottom: 20vh;
-    left: 5vw;
-  }
-  .startsida div button {
-    bottom: 150px;
-  }
-  .startsida div .desktop {
-    display: block;
-  }
-  .startsida .bar h2 {
-    position: relative;
-    bottom: 900px;
-    color: #f92737;
-    font-size: 120px;
-    font-family: "Cedarville Cursive", cursive;
-  }
-  .startsida .bar .text {
-    position: relative;
-    bottom: 40vh;
-  }
 }
 
 body {

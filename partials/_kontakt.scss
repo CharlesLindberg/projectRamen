@@ -2,7 +2,7 @@
 @import "./myColor";
 .main-kontakt{
   background-color:#fbecd3;
-  border-top: solid turquoise;
+  
   font-family: 'Nova Square', sans-serif;
   
   
@@ -50,15 +50,16 @@
 .byggvideo{
   width: 100%;
  
-  video{
+  img{
     max-width: 100%;
-    filter: blur(2px);
+    height: 10%;
+    
     
 
   }
   h2{ 
     position: relative;
-    bottom: 35vw;
+    bottom: 55vw;
     text-align: center;
     color: $colorBeige;
     font-family: 'nunito sans', sans-serif;
@@ -69,7 +70,7 @@
     position: relative;
     text-align: center;
     color: $colorBeige;
-    bottom: 35vw;
+    bottom: 60vw;
     font-size: 3vw;
 
   }
