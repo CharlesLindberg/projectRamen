@@ -31,7 +31,7 @@
 //   }
 // }
 .topnav {
-  background-color: $colorBeige;
+  background-color: $colorDarkBeige;
   overflow: hidden;
   @include nunito;
 }
@@ -52,7 +52,7 @@
 }
 
 .topnav a:hover {
-  background-color: $colorBeige;
+  background-color: $colorDarkBeige;
   color: red;
 }
 
