@@ -526,7 +526,6 @@ label {
   .employee .employee-pictures img {
     min-width: 30%;
     max-width: 50%;
-    -o-object-fit: cover;
        object-fit: cover;
   }
   .employee .employee-pictures img:nth-of-type(2) {
