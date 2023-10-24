@@ -22,11 +22,11 @@
 .topnav a:hover {
   background-color: #fbecd3;
   color: red;
+  transition: 0.2s;
 }
 
 .topnav a.active {
   background-color: #f92737;
-  color: white;
 }
 
 .topnav a.icon {
@@ -364,11 +364,11 @@ label {
 .topnav a:hover {
   background-color: #fbecd3;
   color: red;
+  transition: 0.2s;
 }
 
 .topnav a.active {
   background-color: #f92737;
-  color: white;
 }
 
 .topnav a.icon {
