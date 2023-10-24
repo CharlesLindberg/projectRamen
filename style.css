@@ -50,9 +50,17 @@
   text-align: left;
 }
 
+.topnav.responsive {
+  z-index: 1;
+}
+
 .openBtn {
   position: absolute;
   left: 150px;
+}
+
+.topnav a:active {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 800px) {
@@ -206,7 +214,7 @@ footer .contact-information p {
     flex-direction: row;
   }
   .rubrik h2,
-.rubrik p {
+  .rubrik p {
     position: relative;
     bottom: 60vw;
   }
@@ -400,9 +408,17 @@ label {
   text-align: left;
 }
 
+.topnav.responsive {
+  z-index: 1;
+}
+
 .openBtn {
   position: absolute;
   left: 150px;
+}
+
+.topnav a:active {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 800px) {
@@ -686,12 +702,15 @@ label {
   font-style: italic;
 }
 
+.topnav a:active {
+  text-decoration: underline;
+}
+
 @media (min-width: 1024px) {
   .mobile {
     display: none;
   }
   .startsida .pics {
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
   }

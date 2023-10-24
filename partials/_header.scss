@@ -82,9 +82,17 @@
   text-align: left;
 }
 
+.topnav.responsive {
+  z-index:1;
+}
+
 .openBtn {
   position:absolute;
   left:150px;
+}
+
+.topnav a:active {
+  text-decoration:underline;
 }
 
 
