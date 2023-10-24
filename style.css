@@ -121,7 +121,6 @@ footer .contact-information p {
 }
 
 .meny .content {
-  border: 1px solid black;
   background-color: #9fcec3;
   font-family: "Nunito Sans", sans-serif;
   color: rgb(53, 53, 53);
@@ -173,6 +172,10 @@ footer .contact-information p {
   border-radius: 10px;
   margin: 10px;
 }
+.meny .content .container {
+  position: relative;
+  bottom: 100px;
+}
 
 .entrees {
   border: 1px solid #fbecd3;
@@ -202,7 +205,7 @@ footer .contact-information p {
     flex-direction: row;
   }
   .rubrik h2,
-  .rubrik p {
+.rubrik p {
     position: relative;
     bottom: 60vw;
   }
@@ -603,12 +606,27 @@ label {
 .startsida div img {
   width: 100%;
 }
-.startsida div h1 {
+.startsida div .desktop {
+  display: none;
+}
+.startsida div .pics {
   position: relative;
-  bottom: 110vh;
+}
+.startsida div h1 {
+  position: absolute;
+  bottom: 30vh;
   left: 10vw;
   color: #fbecd3;
-  font-size: 100px;
+  font-size: 70px;
+}
+.startsida div .btn {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .startsida div button {
   margin-top: 16px;
@@ -619,8 +637,6 @@ label {
   border: none;
   border-radius: 4px;
   color: #fbecd3;
-  position: relative;
-  bottom: 300px;
 }
 .startsida div button a {
   text-decoration: none;
@@ -632,25 +648,42 @@ label {
 }
 .startsida .bar {
   color: rgb(53, 53, 53);
-  background-color: #fbecd3;
+  background-color: #9fcec3;
 }
 .startsida .bar h2 {
   position: relative;
   bottom: 230px;
-  color: #fbecd3;
+  color: #f92737;
   font-size: 50px;
-  background-color: rgba(0, 0, 0, 0.508);
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
+  font-family: "Cedarville Cursive", cursive;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+}
+.startsida .bar hr {
+  width: 120px;
+  height: 1px;
+  background-color: black;
+  border: none;
 }
 .startsida .bar .text {
   width: 60%;
-  background-color: #9fcec3;
+  background-color: #fbecd3;
+  color: rgb(53, 53, 53);
   border-radius: 20px;
   text-align: center;
   margin-bottom: 10px;
   padding: 10px;
+  position: relative;
+  bottom: 10vh;
 }
+.startsida .bar .text h3 {
+  font-family: "nova square";
+  font-size: 40px;
+}
+.startsida .bar .text p {
+  font-style: italic;
+}
+
 
 .openBtn {
   display: flex;
@@ -729,6 +762,41 @@ label {
 .formContainer .btn-boka:hover,
 .openButton:hover {
   opacity: 1;
+}
+
+
+@media (min-width: 1024px) {
+  .mobile {
+    display: none;
+  }
+  .startsida .pics {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .startsida div h1 {
+    font-size: 120px;
+    position: absolute;
+    bottom: 20vh;
+    left: 5vw;
+  }
+  .startsida div button {
+    bottom: 150px;
+  }
+  .startsida div .desktop {
+    display: block;
+  }
+  .startsida .bar h2 {
+    position: relative;
+    bottom: 900px;
+    color: #f92737;
+    font-size: 120px;
+    font-family: "Cedarville Cursive", cursive;
+  }
+  .startsida .bar .text {
+    position: relative;
+    bottom: 40vh;
+  }
 }
 
 body {
