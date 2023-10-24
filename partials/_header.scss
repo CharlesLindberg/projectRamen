@@ -58,7 +58,7 @@
 
 .topnav a.active {
   background-color: $colorRed;
-  color: white;
+
 }
 
 .topnav a.icon {
@@ -81,6 +81,11 @@ display: block;
 text-align: left;
 }
 
+.openBtn {
+  position:absolute;
+  left:150px;
+}
+
 
 @media screen and (min-width: 800px) {
   .topnav a:not(:first-child){
@@ -89,6 +94,10 @@ text-align: left;
   .topnav a.icon {
       display: none;
     }
+    .openBtn {
+      position:static;
+    }
+    
 }
 
 
