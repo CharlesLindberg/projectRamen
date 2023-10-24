@@ -22,6 +22,7 @@
 .topnav a:hover {
   background-color: #d8a282;
   color: red;
+  transition: 0.2s;
 }
 
 .topnav a.active {
@@ -371,6 +372,7 @@ label {
 .topnav a:hover {
   background-color: #d8a282;
   color: red;
+  transition: 0.2s;
 }
 
 .topnav a.active {
