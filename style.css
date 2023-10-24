@@ -701,13 +701,10 @@ label {
   font-style: italic;
 }
 
-<<<<<<< HEAD
-=======
 .topnav a:active {
   text-decoration: underline;
 }
 
->>>>>>> 21a1554a5c069123c960357e4ac5c16ddb567b38
 @media (min-width: 1024px) {
   .mobile {
     display: none;
@@ -719,11 +716,7 @@ label {
   .startsida div h1 {
     font-size: 120px;
     position: absolute;
-<<<<<<< HEAD
-    bottom: 20vh;
-=======
     top: 40vh;
->>>>>>> 21a1554a5c069123c960357e4ac5c16ddb567b38
     left: 5vw;
   }
   .startsida div button {
