@@ -701,33 +701,23 @@ label {
   font-style: italic;
 }
 
-<<<<<<< HEAD
 .topnav a:active {
   text-decoration: underline;
 }
 
-=======
->>>>>>> 7f2f7b157c34104a7e8057aaefe88b81523b37ce
 @media (min-width: 1024px) {
   .mobile {
     display: none;
   }
   .startsida .pics {
-<<<<<<< HEAD
-=======
     height: -webkit-fit-content;
->>>>>>> 7f2f7b157c34104a7e8057aaefe88b81523b37ce
     height: -moz-fit-content;
     height: fit-content;
   }
   .startsida div h1 {
     font-size: 120px;
     position: absolute;
-<<<<<<< HEAD
-    bottom: 20vh;
-=======
     top: 40vh;
->>>>>>> 7f2f7b157c34104a7e8057aaefe88b81523b37ce
     left: 5vw;
   }
   .startsida div button {
