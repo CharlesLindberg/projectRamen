@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,25 +11,33 @@
       href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,900;6..12,1000&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="script.js"></script>
     <title>Meny</title>
-    <link rel="icon" href="/images/koiFishLogo.png">
+    <link rel="icon" href="/images/koiFishLogo.png" />
   </head>
   <body>
     <header class="meny">
-      <nav class="topnav" id="myTopnav" role="navigation" aria-label="Main Navigation">
-        <a href="./index.html" class="active"><img src="./images/RamenLogo.png" alt="Koi fish logo"
-            height="75px"
-            width="75px"
+      <nav class="topnav" id="myTopnav" aria-label="Main Navigation">
+        <a href="./index.html" class="active"
+          ><img
+            src="./images/RamenLogo.png"
+            alt="Koi fish logo"
+            height="75"
+            width="75"
         /></a>
         <a href="./index.html">Hem</a>
-        <a href="./meny.html" style="text-decoration: underline;">Meny</a>
+        <a href="./meny.html" style="text-decoration: underline">Meny</a>
         <a href="./omoss.html">Om oss</a>
         <a href="./recensioner.html">Recensioner</a>
         <a href="./kontakt.html">Kontakt</a>
         <div class="openBtn">
-          <button class="openButton" onclick="openForm()"><strong>Boka bord</strong></button>
+          <button class="openButton" onclick="openForm()">
+            <strong>Boka bord</strong>
+          </button>
         </div>
         <div class="loginPopup">
           <div class="formPopup" id="popupForm">
@@ -38,17 +46,35 @@
               <label for="email">
                 <strong>E-mail</strong>
               </label>
-              <input type="text" id="email" placeholder="Your Email" name="email" required>
+              <input
+                type="text"
+                id="email"
+                placeholder="Your Email"
+                name="email"
+                required
+              />
               <label for="date">
                 <strong>Datum</strong>
               </label>
-              <input type="datetime-local" id="date" placeholder="Datum" name="date" required>
+              <input type="datetime-local" id="date" name="date" required />
               <label for="date">
                 <strong>Antal personer</strong>
               </label>
-              <input type="number" id="persons" placeholder="Antal personer" name="persons" required>
+              <input
+                type="number"
+                id="persons"
+                placeholder="Antal personer"
+                name="persons"
+                required
+              />
               <button type="submit" class="btn-boka">Boka</button>
-              <button type="button" class="btn-boka cancel" onclick="closeForm()">Stäng</button>
+              <button
+                type="button"
+                class="btn-boka cancel"
+                onclick="closeForm()"
+              >
+                Stäng
+              </button>
             </form>
           </div>
         </div>
@@ -175,20 +201,24 @@
     </main>
     <footer>
       <div class="row">
-        <div class="contact-information" aria-label="Company Contact Information">
-          <p>Mail:</br>
-            middlese@fosil.pro</br>
+        <div
+          class="contact-information"
+          aria-label="Company Contact Information"
+        >
+          <p>
+            Mail: <br />
+            middlese@fosil.pro <br />
           </p>
           <p>
-            Telefon:</br>
-            +444 555 666 777</br>
+            Telefon:<br />
+            +444 555 666 777<br />
           </p>
           <p>
-            Adress:</br>
-            Tomtebodavägen 3A 171 65, Solna</br>
+            Adress:<br />
+            Tomtebodavägen 3A 171 65, Solna<br />
           </p>
           <p>
-            Copyright:</br>
+            Copyright:<br />
             All the rights.
           </p>
         </div>
