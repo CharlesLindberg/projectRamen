@@ -17,15 +17,48 @@
   </head>
   <body>
     <header class="meny">
-      <nav class="topnav" id="myTopnav" role="navigation" aria-label="Main Navigation">
-        <a href="#home" class="active"><img src="./images/RamenLogo.png" alt="Koi fish logo"
+      <nav
+        class="topnav"
+        id="myTopnav"
+        role="navigation"
+        aria-label="Main Navigation"
+      >
+        <a href="#home" class="active"
+          ><img
+            src="./images/RamenLogo.png"
+            alt="Koi fish logo"
             height="75px"
-            width="75px"></a>
+            width="75px"
+        /></a>
         <a href="./index.html">Hem</a>
         <a href="./meny.html">Meny</a>
         <a href="./omoss.html">Om oss</a>
         <a href="./recensioner.html">Recensioner</a>
         <a href="./kontakt.html">Kontakt</a>
+        <div class="openBtn">
+          <button class="openButton" onclick="openForm()"><strong>Boka bord</strong></button>
+        </div>
+        <div class="loginPopup">
+          <div class="formPopup" id="popupForm">
+            <form action="/action_page.php" class="formContainer">
+              <h2>Boka Bord:</h2>
+              <label for="email">
+                <strong>E-mail</strong>
+              </label>
+              <input type="text" id="email" placeholder="Your Email" name="email" required>
+              <label for="date">
+                <strong>Datum</strong>
+              </label>
+              <input type="datetime-local" id="date" placeholder="Datum" name="date" required>
+              <label for="date">
+                <strong>Antal personer</strong>
+              </label>
+              <input type="number" id="persons" placeholder="Antal personer" name="persons" required>
+              <button type="submit" class="btn-boka">Boka</button>
+              <button type="button" class="btn-boka cancel" onclick="closeForm()">Stäng</button>
+            </form>
+          </div>
+        </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
@@ -43,6 +76,7 @@
           <h2>MENU</h2>
           <p>KOI NOODLE HOUSE</p>
         </div>
+
         <div class="container">
           <div class="appetizers">
             <h3>Förrätter</h3>
@@ -148,12 +182,21 @@
     </main>
     <footer>
       <div class="row">
-        <div class="contact">
+        <div class="contact-information" aria-label="Company Contact Information">
+          <p>Mail:</br>
+            middlese@fosil.pro</br>
+          </p>
           <p>
-            Mail: <br />
-            Telefon: <br />
-            Adress: <br />
-            copywright:
+            Telefon:</br>
+            +444 555 666 777</br>
+          </p>
+          <p>
+            Adress:</br>
+            Tomtebodavägen 3A 171 65, Solna</br>
+          </p>
+          <p>
+            Copyright:</br>
+            All the rights.
           </p>
         </div>
         <div class="contact">
@@ -173,17 +216,17 @@
         <img src="./images/nudlar2-removebg-preview.png" alt="nudlar" />
       </div>
       <div class="row">
-        <div class="footer-nav">
-          <p>Om Oss</p>
-          <p>Meny</p>
+        <div class="footer-nav" aria-label="Footer Navigation">
+          <a href="./omoss.html">Om oss</a>
+          <a href="./meny.html">Meny</a>
         </div>
         <div class="line">
           <hr />
         </div>
         <div class="row">
-          <div class="footer-nav">
-            <p>Kontakt</p>
-            <p>Recensioner</p>
+          <div class="footer-nav" aria-label="Footer Navigation">
+            <a href="./kontakt.html">Kontakt</a>
+            <a href="./recensioner.html">Recensioner</a>
           </div>
         </div>
       </div>
