@@ -290,6 +290,10 @@ footer .contact-information p {
   justify-content: center;
   margin-bottom: 8px;
 }
+.text-form .rec-row label {
+  width: 95px;
+  color: white;
+}
 .text-form .rec-row textarea#rec-text {
   height: 200px;
   width: 60%;
@@ -301,12 +305,7 @@ footer .contact-information p {
 .text-form .rec-row input[type=text] {
   margin-left: 24px;
   border: 1px solid #06b5ab;
-  background: #fbecd3;
-}
-
-label {
-  width: 95px;
-  color: black;
+  background: whitesmoke;
 }
 
 .sent {
