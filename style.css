@@ -214,7 +214,7 @@ footer .contact-information p {
     flex-direction: row;
   }
   .rubrik h2,
-  .rubrik p {
+.rubrik p {
     position: relative;
     bottom: 60vw;
   }
