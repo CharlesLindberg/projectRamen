@@ -74,6 +74,11 @@
         align-items:center;
         justify-content: center;
         margin-bottom: 8px;
+
+        label {
+            width:95px;
+            color:white;
+        }
     
         textarea#rec-text{
             height:200px;
@@ -87,14 +92,9 @@
         input[type="text"]{
             margin-left: 24px;
             border:1px solid $colorTurqoise;
-            background:$colorBeige;
+            background:whitesmoke;
         }
     }
-}
-
-label {
-    width:95px;
-    color:black;
 }
 
 .sent {
